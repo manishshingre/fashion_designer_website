@@ -5,22 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
     
     
 </head>
 <body>
     <header>
-        <div style="display:flex ;">
-        <h1 style="font: size 24px;">Name</h1>
-            <ul style="list-style-type:none ; display:flex ; justify-content: space-between; align-items: flex-end;">
-                <li style="padding-right:4rem ;">About Us</li>
-                <li style="padding-right:4rem ;">Login</li>
-                <li style="padding-right:4rem ;">Contact</li>
-                <li style="padding-right:4rem ;">FAQs</li>
-                <li style="padding-right:4rem ;">Cart</li>
+    <div class="container">
+        <nav class="nav">
+            <a href="index.html" class="logo">FASHION.</a>
+            <ul class="nav-list">
+                <li>
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">Pricing</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">Dates</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">About Us</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
             </ul>
-            </div>
+            <a href="#" id="nav-cta">Book now</a>
+        </nav>
+    </div>
     </header>
+    
+    <div class="slider">
+        <div class="slides">
+    
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+    
+            <div class="slide first">
+                <section><img src="1.jpg" alt="" class="hero"></section>
+            </div>
+            <div class="slide">
+                <section><img src="2.jpg" alt="" class="hero"></section>
+            </div>
+            <div class="slide">
+                <section><img src="3.jpg" alt="" class="hero"></section>
+            </div>
+    
+            <div class="navigation-auto">
+                <div class="auto-btn"></div>
+                <div class="auto-btn"></div>
+                <div class="auto-btn"></div>
+            </div>
+    
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+        </div>
+    </div>
     <div style="display:flex ;">
         <img style="width: 100%;  height: auto;" src="image1.jpg" alt="...">
     </div>
@@ -38,6 +83,9 @@
             </ul>
             <p>Company Name © 2018</p>
         </footer>
+        <!-- <section class="demo-content"></section> -->
+        
+        <script src="script.js"></script>
     </div>
 </body>
 </html>
